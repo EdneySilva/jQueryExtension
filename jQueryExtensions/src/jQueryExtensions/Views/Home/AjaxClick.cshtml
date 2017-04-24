@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<br />
+<form name="frm-newUser" class="row">
+    <div id="response-message" class="alert">
+        <span />
+    </div>
+    <input type="text" name="Name" class="form-control"/>
+    <br />
+    <button id="btnSaveNewUser" type="submit" class="btn btn-success" data-url="/Home/AjaxClick" data-error="" data-parameters="getFromForm('form[name=frm-newUser]');">Cadastrar</button>
+</form>
+
+@section scripts{
+    <script src="~/js/ajaxClick.js"></script>
+}
